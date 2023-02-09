@@ -1,0 +1,18 @@
+git add 添加到暂存区里面去
+git commit 描述更改内容
+git diff 查看更改内容
+git log 或 git log --pretty=oneline 查看下历史记录
+git reset --hard HEAD^ 那么如果要回退到上上个版本只需把HEAD^ 改成 HEAD^^ 以此类推
+git reset --hard HEAD~100 退到前100个版本 
+使用Git提交文件到版本库有两步：
+第一步：是使用 git add 把文件添加进去，实际上就是把文件添加到暂存区。
+第二步：使用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支上。
+git checkout -- file 可以丢弃工作区的修改
+rm 删除 想彻底从版本库中删掉了此文件的话，可以再执行commit命令 提交掉
+git checkout -- b.txt 没有commit之前，如果我想在版本库中恢复此文件
+git branch 查看分支
+git branch dev 创建分支dev
+git checkout -b dev 创建并切换分支dev
+git checkout master 切换分支master
+git merge dev 合并分支dev
+git branch –d dev 删除分支dev
